@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 break;
             case 3:
+                document.getElementById('terminar').src = url.textContent;
+                btnContinuar.enabled = false;
+                document.getElementById('atras').enabled = false;
                 document.getElementById('seccion_3').display = none;
                 document.getElementById('seccion_4').display = block;
                 break;
