@@ -1,6 +1,6 @@
 {
   "name": "ae3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Actividad evaluable 3",
   "main": "index.js",
   "dependencies": {
