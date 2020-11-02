@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (ok) {
                     numPaso++;
+                    document.getElementById('nombre_resultado').textContent = data[0];
+                    document.getElementById('fecha_resultado').textContent = data[1];
+                    document.getElementById('direccion_resultado').textContent = data[2];
+                    document.getElementById('codigo_postal_resultado').textContent = data[3];
+                    document.getElementById('provincia_resultado').textContent = data[4];
+                    document.getElementById('municipio_resultado').textContent = data[5];
                     document.getElementById('seccion_2').display = none;
                     document.getElementById('seccion_3').display = block;
                 } else {
@@ -46,7 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                 }
                 break;
-            
+            case 3:
+                document.getElementById('seccion_3').display = none;
+                document.getElementById('seccion_4').display = block;
+                break;
             default:
                 break;
         }
@@ -58,7 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById('seccion_2').display = none;
                 document.getElementById('seccion_1').display = block;
                 break;
-            
+            case 3:
+                document.getElementById('seccion_3').display = none;
+                document.getElementById('seccion_2').display = block;
+                break;
+
             default:
                 break;
         }
